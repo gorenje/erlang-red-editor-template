@@ -1,0 +1,10 @@
+FROM nodered/node-red:4.0.9-22
+
+USER root
+
+COPY ./entrypoint.sh /usr/src/node-red/
+RUN chmod 755 /usr/src/node-red/entrypoint.sh
+
+USER node-red
+
+ENTRYPOINT /usr/src/node-red/entrypoint.sh

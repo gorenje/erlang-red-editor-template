@@ -1,0 +1,381 @@
+[
+    {
+        "id": "8f6887bde2c49a44",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4ffc58e357efa2a0",
+        "type": "tab",
+        "label": "RESTART",
+        "disabled": false,
+        "info": "# Aim\n\nRestart the instance of Node-RED that is running this flow.\n\nThis flow handles three possible ways of restarting Node-RED:\n\n1. in a docker environment meaning that the process id of 1 is Node-RED. This then assumes that docker automagically restarts the image if it stops.\n\n2. using systemd start/stop script (as installed when using Node-RED via apt-get on a raspberryPI): `service nodered restart` is called\n\n3. running Node-RED using the `node-red` command on the command line. This is killed using `kill -INT ${PPID}`. To make this be a restart of Node-RED, wrap the command in a while loop: `while [ 1 ] ; do node-red ; done`\n\n",
+        "env": []
+    },
+    {
+        "id": "37dc6931ade8097c",
+        "type": "FlowCompareCfg",
+        "name": "FlowCompare",
+        "data": "some default value"
+    },
+    {
+        "id": "1ea36d1331c5ae18",
+        "type": "FlowHubCfg",
+        "apiToken": "",
+        "apiTokenType": "",
+        "fullname": "",
+        "email": "",
+        "flowid": "d5b52b27a613e8c0",
+        "flowrevision": "",
+        "notab": false,
+        "pushcomment": "",
+        "pushnewflows": false,
+        "forcepush": false,
+        "tokens": [],
+        "flowrevisions": {
+            "d5b52b27a613e8c0": "32dfdc471c9ba522a56ebf1911b625344f9bfd3a",
+            "d0506e991d512ace": "dd0f32d63c096781eb523a379eeaa8225ffe8412",
+            "4ffc58e357efa2a0": "d5c5a3cf67697e229a9c29f08e5e0499875f2f3a"
+        }
+    },
+    {
+        "id": "44707866eb1f37b3",
+        "type": "Flow2MermaidCfg",
+        "name": "Flow2Uml",
+        "direction": "TB",
+        "genmereditor": ""
+    },
+    {
+        "id": "71053ba87d84f6fa",
+        "type": "ScratchPadCfg",
+        "name": "ScratchPad",
+        "scratches": [
+            {
+                "txt": "",
+                "hgt": "150px",
+                "wdh": "360px"
+            }
+        ]
+    },
+    {
+        "id": "bd51137318db970b",
+        "type": "erlconfigCfg",
+        "name": "erlconfig",
+        "data": "some default value"
+    },
+    {
+        "id": "0709dd2faa36c481",
+        "type": "exec",
+        "z": "4ffc58e357efa2a0",
+        "command": "service nodered restart",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1631,
+        "y": 76.75,
+        "wires": [
+            [
+                "5775c1771abb244a"
+            ],
+            [
+                "5775c1771abb244a"
+            ],
+            [
+                "5775c1771abb244a"
+            ]
+        ]
+    },
+    {
+        "id": "5775c1771abb244a",
+        "type": "debug",
+        "z": "4ffc58e357efa2a0",
+        "name": "debug 52",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1880,
+        "y": 78.75,
+        "wires": []
+    },
+    {
+        "id": "0043496abe01fae5",
+        "type": "exec",
+        "z": "4ffc58e357efa2a0",
+        "command": "kill -INT 1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1033,
+        "y": 275,
+        "wires": [
+            [
+                "67bfa2c464cb463c"
+            ],
+            [
+                "67bfa2c464cb463c"
+            ],
+            [
+                "67bfa2c464cb463c"
+            ]
+        ]
+    },
+    {
+        "id": "67bfa2c464cb463c",
+        "type": "debug",
+        "z": "4ffc58e357efa2a0",
+        "name": "debug 118",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1219,
+        "y": 276,
+        "wires": []
+    },
+    {
+        "id": "30a489b5426be0d0",
+        "type": "inject",
+        "z": "4ffc58e357efa2a0",
+        "name": "restart trigger",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 249,
+        "y": 173.35716819763184,
+        "wires": [
+            [
+                "9be34540d75e09ae"
+            ]
+        ]
+    },
+    {
+        "id": "069d9a4193e371ab",
+        "type": "link in",
+        "z": "4ffc58e357efa2a0",
+        "name": "[restart] trigger",
+        "links": [],
+        "x": 304,
+        "y": 318,
+        "wires": [
+            [
+                "9be34540d75e09ae"
+            ]
+        ]
+    },
+    {
+        "id": "9be34540d75e09ae",
+        "type": "exec",
+        "z": "4ffc58e357efa2a0",
+        "command": "ls /.dockerenv",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 453.57147216796875,
+        "y": 234.857177734375,
+        "wires": [
+            [],
+            [],
+            [
+                "ed180d9bb3dd8278",
+                "8a4b338fa5255b5f"
+            ]
+        ]
+    },
+    {
+        "id": "07ad263d49875e7a",
+        "type": "switch",
+        "z": "4ffc58e357efa2a0",
+        "name": "using docker?",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 826.2857666015625,
+        "y": 221.35716247558594,
+        "wires": [
+            [
+                "e55e3623ada0c014"
+            ],
+            [
+                "0043496abe01fae5"
+            ]
+        ],
+        "outputLabels": [
+            "no",
+            "yes"
+        ]
+    },
+    {
+        "id": "ed180d9bb3dd8278",
+        "type": "ClientCode",
+        "z": "4ffc58e357efa2a0",
+        "name": "",
+        "clientcode": "RED.notify(\n    \"Restart triggered\", {\n        type: \"warning\"\n    }\n);",
+        "format": "javascript",
+        "x": 679,
+        "y": 318,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a4b338fa5255b5f",
+        "type": "delay",
+        "z": "4ffc58e357efa2a0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 669,
+        "y": 173.35716819763184,
+        "wires": [
+            [
+                "07ad263d49875e7a"
+            ]
+        ]
+    },
+    {
+        "id": "e55e3623ada0c014",
+        "type": "exec",
+        "z": "4ffc58e357efa2a0",
+        "command": "/usr/sbin/service nodered status",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1087,
+        "y": 145,
+        "wires": [
+            [],
+            [],
+            [
+                "7f49584d9627b6be"
+            ]
+        ]
+    },
+    {
+        "id": "7f49584d9627b6be",
+        "type": "switch",
+        "z": "4ffc58e357efa2a0",
+        "name": "using systemd?",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 1364,
+        "y": 119,
+        "wires": [
+            [
+                "0709dd2faa36c481"
+            ],
+            [
+                "2f6cc5558fce260b"
+            ]
+        ],
+        "outputLabels": [
+            "yes",
+            "no"
+        ]
+    },
+    {
+        "id": "2f6cc5558fce260b",
+        "type": "exec",
+        "z": "4ffc58e357efa2a0",
+        "command": "kill -INT ${PPID}",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1603,
+        "y": 163,
+        "wires": [
+            [
+                "a427147295e8ae25"
+            ],
+            [
+                "a427147295e8ae25"
+            ],
+            [
+                "a427147295e8ae25"
+            ]
+        ]
+    },
+    {
+        "id": "a427147295e8ae25",
+        "type": "debug",
+        "z": "4ffc58e357efa2a0",
+        "name": "debug 269",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1807,
+        "y": 162,
+        "wires": []
+    }
+]

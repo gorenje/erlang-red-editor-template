@@ -1,0 +1,16 @@
+{
+    "ajv": {
+        "spec": "ajv",
+        "module": "ajv",
+        "subpath": "",
+        "builtin": false,
+        "known": false
+    },
+    "@octokit/rest": {
+        "spec": "@octokit/rest",
+        "module": "@octokit/rest",
+        "subpath": "",
+        "builtin": false,
+        "known": false
+    }
+}

@@ -1,0 +1,19 @@
+---
+version: '2.2'
+
+networks:
+  nrer:
+
+services:
+  erlangred-nodered-template:
+    build:
+      context: ./
+      dockerfile: Dockerfile.nodered
+    env_file: .env.nodered
+    ports:
+      - "0.0.0.0:1890:1880"
+    networks:
+      - nrer
+    restart: "no"
+    volumes:
+      - ./node-red/data:/data
