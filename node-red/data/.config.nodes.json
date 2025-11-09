@@ -429,7 +429,7 @@
     },
     "@gorenje/erlang-red-kafka-brod": {
         "name": "@gorenje/erlang-red-kafka-brod",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "local": true,
         "user": true,
         "nodes": {
@@ -489,7 +489,7 @@
     },
     "@gregoriusrippenstein/erlang-red-process-nodes": {
         "name": "@gregoriusrippenstein/erlang-red-process-nodes",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "local": true,
         "user": true,
         "nodes": {
@@ -656,7 +656,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flow2uml": {
         "name": "@gregoriusrippenstein/node-red-contrib-flow2uml",
-        "version": "0.4.1",
+        "version": "0.4.2",
         "local": true,
         "user": true,
         "nodes": {
@@ -842,7 +842,7 @@
     },
     "@greyorange/node-red-contrib-amqp": {
         "name": "@greyorange/node-red-contrib-amqp",
-        "version": "2.4.0",
+        "version": "2.6.5",
         "local": true,
         "user": true,
         "nodes": {
