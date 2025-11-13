@@ -819,7 +819,8 @@
                 "module": "@gregoriusrippenstein/node-red-contrib-introspection",
                 "file": "/data/node_modules/@gregoriusrippenstein/node-red-contrib-introspection/nodes/51-install-package.js"
             }
-        }
+        },
+        "pending_version": "0.11.2"
     },
     "@gregoriusrippenstein/node-red-scratchpad": {
         "name": "@gregoriusrippenstein/node-red-scratchpad",
@@ -842,7 +843,7 @@
     },
     "@greyorange/node-red-contrib-amqp": {
         "name": "@greyorange/node-red-contrib-amqp",
-        "version": "2.4.0",
+        "version": "2.6.5",
         "local": true,
         "user": true,
         "nodes": {
@@ -890,8 +891,7 @@
                 "module": "@greyorange/node-red-contrib-amqp",
                 "file": "/data/node_modules/@greyorange/node-red-contrib-amqp/build/src/nodes/amqp-in-manual-ack.js"
             }
-        },
-        "pending_version": "2.6.5"
+        }
     },
     "node-red-contrib-binary": {
         "name": "node-red-contrib-binary",
