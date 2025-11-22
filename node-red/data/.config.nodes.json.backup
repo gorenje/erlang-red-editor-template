@@ -719,7 +719,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flowhub": {
         "name": "@gregoriusrippenstein/node-red-contrib-flowhub",
-        "version": "0.9.0",
+        "version": "0.9.1",
         "local": true,
         "user": true,
         "nodes": {
@@ -749,7 +749,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-introspection": {
         "name": "@gregoriusrippenstein/node-red-contrib-introspection",
-        "version": "0.11.1",
+        "version": "0.11.2",
         "local": true,
         "user": true,
         "nodes": {
@@ -819,8 +819,7 @@
                 "module": "@gregoriusrippenstein/node-red-contrib-introspection",
                 "file": "/data/node_modules/@gregoriusrippenstein/node-red-contrib-introspection/nodes/51-install-package.js"
             }
-        },
-        "pending_version": "0.11.2"
+        }
     },
     "@gregoriusrippenstein/node-red-scratchpad": {
         "name": "@gregoriusrippenstein/node-red-scratchpad",
@@ -839,7 +838,8 @@
                 "module": "@gregoriusrippenstein/node-red-scratchpad",
                 "file": "/data/node_modules/@gregoriusrippenstein/node-red-scratchpad/nodes/scratchpad.js"
             }
-        }
+        },
+        "pending_version": "0.0.9"
     },
     "@greyorange/node-red-contrib-amqp": {
         "name": "@greyorange/node-red-contrib-amqp",

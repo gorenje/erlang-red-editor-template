@@ -719,7 +719,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flowhub": {
         "name": "@gregoriusrippenstein/node-red-contrib-flowhub",
-        "version": "0.9.0",
+        "version": "0.9.1",
         "local": true,
         "user": true,
         "nodes": {
@@ -823,7 +823,7 @@
     },
     "@gregoriusrippenstein/node-red-scratchpad": {
         "name": "@gregoriusrippenstein/node-red-scratchpad",
-        "version": "0.0.8",
+        "version": "0.0.9",
         "local": true,
         "user": true,
         "nodes": {
