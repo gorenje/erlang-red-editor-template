@@ -530,7 +530,7 @@
     },
     "@gregoriusrippenstein/erlang-red-supervisor-node": {
         "name": "@gregoriusrippenstein/erlang-red-supervisor-node",
-        "version": "0.4.3",
+        "version": "0.4.4",
         "local": true,
         "user": true,
         "nodes": {
@@ -588,6 +588,17 @@
                 "user": false,
                 "module": "@gregoriusrippenstein/erlang-red-supervisor-node",
                 "file": "/data/node_modules/@gregoriusrippenstein/erlang-red-supervisor-node/nodes/erlgenserver.js"
+            },
+            "elxmodule": {
+                "name": "elxmodule",
+                "types": [
+                    "elxmodule"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@gregoriusrippenstein/erlang-red-supervisor-node",
+                "file": "/data/node_modules/@gregoriusrippenstein/erlang-red-supervisor-node/nodes/elxmodule.js"
             }
         }
     },

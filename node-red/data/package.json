@@ -7,7 +7,7 @@
         "@gorenje/erlang-red-kafka-brod": "file:nodes/gorenje-erlang-red-kafka-brod-0.1.1.tgz",
         "@gorenje/node-red-contrib-flowcompare": "file:nodes/gorenje-node-red-contrib-flowcompare-0.2.2.tgz",
         "@gregoriusrippenstein/erlang-red-process-nodes": "file:nodes/gregoriusrippenstein-erlang-red-process-nodes-0.1.1.tgz",
-        "@gregoriusrippenstein/erlang-red-supervisor-node": "file:nodes/gregoriusrippenstein-erlang-red-supervisor-node-0.4.3.tgz",
+        "@gregoriusrippenstein/erlang-red-supervisor-node": "file:nodes/gregoriusrippenstein-erlang-red-supervisor-node-0.4.4.tgz",
         "@gregoriusrippenstein/erlang-red-unittest": "file:nodes/gregoriusrippenstein-erlang-red-unittest-0.12.0.tgz",
         "@gregoriusrippenstein/node-red-contrib-flow2uml": "file:nodes/gregoriusrippenstein-node-red-contrib-flow2uml-0.4.2.tgz",
         "@gregoriusrippenstein/node-red-contrib-flowhub": "file:nodes/gregoriusrippenstein-node-red-contrib-flowhub-0.9.1.tgz",

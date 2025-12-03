@@ -589,7 +589,8 @@
                 "module": "@gregoriusrippenstein/erlang-red-supervisor-node",
                 "file": "/data/node_modules/@gregoriusrippenstein/erlang-red-supervisor-node/nodes/erlgenserver.js"
             }
-        }
+        },
+        "pending_version": "0.4.4"
     },
     "@gregoriusrippenstein/erlang-red-unittest": {
         "name": "@gregoriusrippenstein/erlang-red-unittest",
@@ -823,7 +824,7 @@
     },
     "@gregoriusrippenstein/node-red-scratchpad": {
         "name": "@gregoriusrippenstein/node-red-scratchpad",
-        "version": "0.0.8",
+        "version": "0.0.9",
         "local": true,
         "user": true,
         "nodes": {
@@ -838,8 +839,7 @@
                 "module": "@gregoriusrippenstein/node-red-scratchpad",
                 "file": "/data/node_modules/@gregoriusrippenstein/node-red-scratchpad/nodes/scratchpad.js"
             }
-        },
-        "pending_version": "0.0.9"
+        }
     },
     "@greyorange/node-red-contrib-amqp": {
         "name": "@greyorange/node-red-contrib-amqp",
