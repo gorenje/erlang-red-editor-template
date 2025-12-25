@@ -67,6 +67,13 @@
         "data": "some default value"
     },
     {
+        "id": "e9e791111cff255f",
+        "type": "auto_layout_config",
+        "name": "AutoLayout",
+        "algorithm": "dagre_lr",
+        "settings": "{\"dagre_lr\":{\"rankdir\":\"LR\",\"marginx\":20,\"marginy\":20,\"nodesep\":30,\"ranksep\":50},\"dagre_longest_path\":{\"rankdir\":\"LR\",\"marginx\":2,\"marginy\":2,\"ranker\":\"longest-path\",\"nodesep\":2,\"ranksep\":2},\"elkjs_mr_tree\":{\"algorithm\":\"mrtree\",\"childAreaHeight\":4500,\"childAreaWidth\":4500,\"org.eclipse.elk.direction\":\"RIGHT\"},\"elkjs_layered_upwards\":{\"algorithm\":\"org.eclipse.elk.layered\",\"elk.direction\":\"UP\",\"cycleBreaking.strategy\":\"INTERACTIVE\",\"layering.strategy\":\"INTERACTIVE\",\"crossingMinimization.semiInteractive\":true,\"separateConnectedComponents\":true,\"nodePlacement.strategy\":\"NETWORK_SIMPLEX\",\"spacing.nodeNode\":70,\"spacing.nodeNodeBetweenLayers\":25,\"spacing.edgeNode\":25,\"spacing.edgeNodeBetweenLayers\":20,\"spacing.edgeEdge\":20,\"spacing.edgeEdgeBetweenLayers\":15,\"elk.hierarchyHandling\":\"INCLUDE_CHILDREN\",\"elk.layered.spacing.edgeNodeBetweenLayers\":40,\"elk.layered.nodePlacement.bk.fixedAlignment\":\"BALANCED\",\"layering.layerConstraint\":\"FIRST\"},\"elkjs_layered_downwards\":{\"algorithm\":\"org.eclipse.elk.layered\",\"elk.direction\":\"DOWN\",\"cycleBreaking.strategy\":\"INTERACTIVE\",\"layering.strategy\":\"INTERACTIVE\",\"crossingMinimization.semiInteractive\":true,\"separateConnectedComponents\":true,\"nodePlacement.strategy\":\"NETWORK_SIMPLEX\",\"spacing.nodeNode\":70,\"spacing.nodeNodeBetweenLayers\":25,\"spacing.edgeNode\":25,\"spacing.edgeNodeBetweenLayers\":20,\"spacing.edgeEdge\":20,\"spacing.edgeEdgeBetweenLayers\":15},\"elkjs_box\":{\"algorithm\":\"org.eclipse.elk.box\",\"childAreaHeight\":3000,\"childAreaWidth\":3000},\"pull_request_2267\":{}}"
+    },
+    {
         "id": "0709dd2faa36c481",
         "type": "exec",
         "z": "4ffc58e357efa2a0",
