@@ -530,7 +530,7 @@
     },
     "@gregoriusrippenstein/erlang-red-supervisor-node": {
         "name": "@gregoriusrippenstein/erlang-red-supervisor-node",
-        "version": "0.4.4",
+        "version": "0.4.5",
         "local": true,
         "user": true,
         "nodes": {
@@ -667,7 +667,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flow2uml": {
         "name": "@gregoriusrippenstein/node-red-contrib-flow2uml",
-        "version": "0.4.2",
+        "version": "0.4.3",
         "local": true,
         "user": true,
         "nodes": {
@@ -726,7 +726,8 @@
                 "module": "@gregoriusrippenstein/node-red-contrib-flow2uml",
                 "file": "/data/node_modules/@gregoriusrippenstein/node-red-contrib-flow2uml/nodes/mermaid-state-end.js"
             }
-        }
+        },
+        "pending_version": "0.4.4"
     },
     "@gregoriusrippenstein/node-red-contrib-flowhub": {
         "name": "@gregoriusrippenstein/node-red-contrib-flowhub",
@@ -959,6 +960,25 @@
                 "user": false,
                 "module": "node-red-node-markdown",
                 "file": "/data/node_modules/node-red-node-markdown/70-markdown.js"
+            }
+        }
+    },
+    "@bartbutenaers/node-red-autolayout-sidebar": {
+        "name": "@bartbutenaers/node-red-autolayout-sidebar",
+        "version": "0.4.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "auto_layout_config": {
+                "name": "auto_layout_config",
+                "types": [
+                    "auto_layout_config"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@bartbutenaers/node-red-autolayout-sidebar",
+                "file": "/data/node_modules/@bartbutenaers/node-red-autolayout-sidebar/auto_layout_config.js"
             }
         }
     }

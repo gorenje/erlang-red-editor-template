@@ -530,7 +530,7 @@
     },
     "@gregoriusrippenstein/erlang-red-supervisor-node": {
         "name": "@gregoriusrippenstein/erlang-red-supervisor-node",
-        "version": "0.4.4",
+        "version": "0.4.5",
         "local": true,
         "user": true,
         "nodes": {
@@ -667,7 +667,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flow2uml": {
         "name": "@gregoriusrippenstein/node-red-contrib-flow2uml",
-        "version": "0.4.2",
+        "version": "0.4.4",
         "local": true,
         "user": true,
         "nodes": {
