@@ -667,7 +667,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flow2uml": {
         "name": "@gregoriusrippenstein/node-red-contrib-flow2uml",
-        "version": "0.4.3",
+        "version": "0.4.4",
         "local": true,
         "user": true,
         "nodes": {
@@ -726,8 +726,7 @@
                 "module": "@gregoriusrippenstein/node-red-contrib-flow2uml",
                 "file": "/data/node_modules/@gregoriusrippenstein/node-red-contrib-flow2uml/nodes/mermaid-state-end.js"
             }
-        },
-        "pending_version": "0.4.4"
+        }
     },
     "@gregoriusrippenstein/node-red-contrib-flowhub": {
         "name": "@gregoriusrippenstein/node-red-contrib-flowhub",
@@ -901,25 +900,6 @@
                 "user": false,
                 "module": "@greyorange/node-red-contrib-amqp",
                 "file": "/data/node_modules/@greyorange/node-red-contrib-amqp/build/src/nodes/amqp-in-manual-ack.js"
-            }
-        }
-    },
-    "node-red-contrib-binary": {
-        "name": "node-red-contrib-binary",
-        "version": "0.1.3",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "binary": {
-                "name": "binary",
-                "types": [
-                    "binary"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-binary",
-                "file": "/data/node_modules/node-red-contrib-binary/binary.js"
             }
         }
     },

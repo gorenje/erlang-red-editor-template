@@ -6,6 +6,7 @@
     "dependencies": {
         "@bartbutenaers/node-red-autolayout-sidebar": "file:nodes/bartbutenaers-node-red-autolayout-sidebar-0.4.1.tgz",
         "@gorenje/erlang-red-kafka-brod": "file:nodes/gorenje-erlang-red-kafka-brod-0.1.1.tgz",
+        "@gorenje/node-red-contrib-binary": "file:nodes/gorenje-node-red-contrib-binary-0.1.4.tgz",
         "@gorenje/node-red-contrib-flowcompare": "file:nodes/gorenje-node-red-contrib-flowcompare-0.2.2.tgz",
         "@gregoriusrippenstein/erlang-red-process-nodes": "file:nodes/gregoriusrippenstein-erlang-red-process-nodes-0.1.1.tgz",
         "@gregoriusrippenstein/erlang-red-supervisor-node": "file:nodes/gregoriusrippenstein-erlang-red-supervisor-node-0.4.5.tgz",
@@ -17,7 +18,6 @@
         "@greyorange/node-red-contrib-amqp": "file:nodes/greyorange-node-red-contrib-amqp-2.6.5.tgz",
         "@octokit/rest": "^21.1.1",
         "ajv": "^8.17.1",
-        "node-red-contrib-binary": "~0.1.3",
         "node-red-contrib-i2c": "~0.9.0",
         "node-red-node-markdown": "~0.6.0"
     }
