@@ -446,7 +446,7 @@ module.exports = {
         },
 
       page: {
-          title: "Erlang-Red",
+          title: "EredTemplate",
           favicon: "favicon.png",
           tabicon: {
             icon: "red/images/logo.png",
@@ -454,7 +454,7 @@ module.exports = {
           }
         },
         header: {
-          title: "Erlang-Red",
+          title: "EredTemplate",
           image: "red/images/logo.png"
         },
         asset: {
