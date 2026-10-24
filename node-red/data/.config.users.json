@@ -19,6 +19,26 @@
                 "core:deploy-flows": {
                     "scope": "*",
                     "key": "ctrl-s"
+                },
+                "core:clear-debug-messages": {
+                    "scope": "*",
+                    "key": "ctrl-shift-d"
+                },
+                "core:show-event-log": {
+                    "scope": "*",
+                    "key": "ctrl-alt-l"
+                },
+                "core:zoom-reset": {
+                    "scope": "red-ui-workspace",
+                    "key": "ctrl-1"
+                },
+                "core:zoom-out": {
+                    "scope": "red-ui-workspace",
+                    "key": "ctrl-§"
+                },
+                "core:zoom-in": {
+                    "scope": "red-ui-workspace",
+                    "key": "ctrl-2"
                 }
             },
             "dialog": {

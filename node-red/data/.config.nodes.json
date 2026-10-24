@@ -760,7 +760,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-introspection": {
         "name": "@gregoriusrippenstein/node-red-contrib-introspection",
-        "version": "0.11.2",
+        "version": "0.11.4",
         "local": true,
         "user": true,
         "nodes": {

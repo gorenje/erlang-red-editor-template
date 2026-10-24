@@ -830,7 +830,8 @@
                 "module": "@gregoriusrippenstein/node-red-contrib-introspection",
                 "file": "/data/node_modules/@gregoriusrippenstein/node-red-contrib-introspection/nodes/51-install-package.js"
             }
-        }
+        },
+        "pending_version": "0.11.4"
     },
     "@gregoriusrippenstein/node-red-scratchpad": {
         "name": "@gregoriusrippenstein/node-red-scratchpad",
@@ -959,6 +960,25 @@
                 "user": false,
                 "module": "@bartbutenaers/node-red-autolayout-sidebar",
                 "file": "/data/node_modules/@bartbutenaers/node-red-autolayout-sidebar/auto_layout_config.js"
+            }
+        }
+    },
+    "@gorenje/node-red-contrib-binary": {
+        "name": "@gorenje/node-red-contrib-binary",
+        "version": "0.1.4",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "binary": {
+                "name": "binary",
+                "types": [
+                    "binary"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@gorenje/node-red-contrib-binary",
+                "file": "/data/node_modules/@gorenje/node-red-contrib-binary/binary.js"
             }
         }
     }
