@@ -10,10 +10,11 @@
                 "view-node-status": true,
                 "view-node-show-label": true,
                 "view-show-tips": false,
-                "view-show-welcome-tours": true
+                "view-show-welcome-tours": true,
+                "view-node-info-icon": true
             },
             "tours": {
-                "welcome": "4.0.9"
+                "welcome": "5.0.8"
             },
             "keymap": {
                 "core:deploy-flows": {
@@ -35,12 +36,76 @@
                 "core:zoom-out": {
                     "scope": "red-ui-workspace",
                     "key": "ctrl-§"
+                },
+                "core:zoom-in": {
+                    "scope": "red-ui-workspace",
+                    "key": "ctrl-2"
+                },
+                "core:show-export-dialog": {
+                    "scope": "red-ui-workspace",
+                    "key": "ctrl-e"
                 }
             },
             "dialog": {
                 "export": {
                     "pretty": true,
                     "json-view": true
+                }
+            },
+            "sidebar": {
+                "state": {
+                    "v": 4,
+                    "tabs": [],
+                    "primary": {
+                        "width": 750,
+                        "top": {
+                            "tabs": [
+                                "info",
+                                "help",
+                                "config",
+                                "context",
+                                "UnitTestingErlangRed",
+                                "Flow2Mermaid",
+                                "FlowHubDiff",
+                                "IntrospectionMsgTrace",
+                                "IntrospectionObfuscation",
+                                "IntrospectionLint",
+                                "IntrospectionCapture",
+                                "ScratchPad",
+                                "FlowCompare",
+                                "erlconfig",
+                                "sidebar-auto-layout"
+                            ],
+                            "height": 955,
+                            "hidden": false,
+                            "active": "config"
+                        },
+                        "bottom": {
+                            "tabs": [
+                                "debug"
+                            ],
+                            "hidden": false,
+                            "active": "debug"
+                        }
+                    },
+                    "secondary": {
+                        "width": 613,
+                        "top": {
+                            "tabs": [
+                                "explorer"
+                            ],
+                            "height": 739,
+                            "hidden": false,
+                            "active": "explorer"
+                        },
+                        "bottom": {
+                            "tabs": [
+                                "palette"
+                            ],
+                            "hidden": false,
+                            "active": "palette"
+                        }
+                    }
                 }
             }
         },

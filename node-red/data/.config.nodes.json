@@ -1,7 +1,7 @@
 {
     "node-red": {
         "name": "node-red",
-        "version": "4.0.9",
+        "version": "5.0.8",
         "local": false,
         "user": false,
         "nodes": {
@@ -468,25 +468,6 @@
             }
         }
     },
-    "@gorenje/node-red-contrib-flowcompare": {
-        "name": "@gorenje/node-red-contrib-flowcompare",
-        "version": "0.2.2",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "flowcompare": {
-                "name": "flowcompare",
-                "types": [
-                    "FlowCompareCfg"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "@gorenje/node-red-contrib-flowcompare",
-                "file": "/data/node_modules/@gorenje/node-red-contrib-flowcompare/nodes/flowcompare.js"
-            }
-        }
-    },
     "@gregoriusrippenstein/erlang-red-process-nodes": {
         "name": "@gregoriusrippenstein/erlang-red-process-nodes",
         "version": "0.1.1",
@@ -604,7 +585,7 @@
     },
     "@gregoriusrippenstein/erlang-red-unittest": {
         "name": "@gregoriusrippenstein/erlang-red-unittest",
-        "version": "0.12.2",
+        "version": "0.20.2",
         "local": true,
         "user": true,
         "nodes": {
@@ -667,7 +648,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flow2uml": {
         "name": "@gregoriusrippenstein/node-red-contrib-flow2uml",
-        "version": "0.4.4",
+        "version": "0.5.1",
         "local": true,
         "user": true,
         "nodes": {
@@ -730,7 +711,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flowhub": {
         "name": "@gregoriusrippenstein/node-red-contrib-flowhub",
-        "version": "0.9.1",
+        "version": "1.1.4",
         "local": true,
         "user": true,
         "nodes": {
@@ -760,7 +741,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-introspection": {
         "name": "@gregoriusrippenstein/node-red-contrib-introspection",
-        "version": "0.11.4",
+        "version": "0.16.1",
         "local": true,
         "user": true,
         "nodes": {
@@ -834,7 +815,7 @@
     },
     "@gregoriusrippenstein/node-red-scratchpad": {
         "name": "@gregoriusrippenstein/node-red-scratchpad",
-        "version": "0.0.9",
+        "version": "0.2.1",
         "local": true,
         "user": true,
         "nodes": {
@@ -926,7 +907,7 @@
     },
     "node-red-node-markdown": {
         "name": "node-red-node-markdown",
-        "version": "0.6.0",
+        "version": "0.6.3",
         "local": true,
         "user": true,
         "nodes": {
@@ -978,6 +959,25 @@
                 "user": false,
                 "module": "@gorenje/node-red-contrib-binary",
                 "file": "/data/node_modules/@gorenje/node-red-contrib-binary/binary.js"
+            }
+        }
+    },
+    "@gregoriusrippenstein/node-red-contrib-flowcompare": {
+        "name": "@gregoriusrippenstein/node-red-contrib-flowcompare",
+        "version": "1.0.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "flowcompare": {
+                "name": "flowcompare",
+                "types": [
+                    "FlowCompareCfg"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@gregoriusrippenstein/node-red-contrib-flowcompare",
+                "file": "/data/node_modules/@gregoriusrippenstein/node-red-contrib-flowcompare/nodes/flowcompare.js"
             }
         }
     }

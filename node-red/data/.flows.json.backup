@@ -16,16 +16,9 @@
         "env": []
     },
     {
-        "id": "37dc6931ade8097c",
-        "type": "FlowCompareCfg",
-        "name": "FlowCompare",
-        "data": "some default value"
-    },
-    {
         "id": "1ea36d1331c5ae18",
         "type": "FlowHubCfg",
-        "apiToken": "",
-        "apiTokenType": "",
+        "apiTokenType": "cred",
         "fullname": "",
         "email": "",
         "flowid": "d5b52b27a613e8c0",
@@ -34,7 +27,6 @@
         "pushcomment": "",
         "pushnewflows": false,
         "forcepush": false,
-        "tokens": [],
         "flowrevisions": {
             "d5b52b27a613e8c0": "32dfdc471c9ba522a56ebf1911b625344f9bfd3a",
             "d0506e991d512ace": "dd0f32d63c096781eb523a379eeaa8225ffe8412",
@@ -72,6 +64,12 @@
         "name": "AutoLayout",
         "algorithm": "dagre_lr",
         "settings": "{\"dagre_lr\":{\"rankdir\":\"LR\",\"marginx\":20,\"marginy\":20,\"nodesep\":30,\"ranksep\":50},\"dagre_longest_path\":{\"rankdir\":\"LR\",\"marginx\":2,\"marginy\":2,\"ranker\":\"longest-path\",\"nodesep\":2,\"ranksep\":2},\"elkjs_mr_tree\":{\"algorithm\":\"mrtree\",\"childAreaHeight\":4500,\"childAreaWidth\":4500,\"org.eclipse.elk.direction\":\"RIGHT\"},\"elkjs_layered_upwards\":{\"algorithm\":\"org.eclipse.elk.layered\",\"elk.direction\":\"UP\",\"cycleBreaking.strategy\":\"INTERACTIVE\",\"layering.strategy\":\"INTERACTIVE\",\"crossingMinimization.semiInteractive\":true,\"separateConnectedComponents\":true,\"nodePlacement.strategy\":\"NETWORK_SIMPLEX\",\"spacing.nodeNode\":70,\"spacing.nodeNodeBetweenLayers\":25,\"spacing.edgeNode\":25,\"spacing.edgeNodeBetweenLayers\":20,\"spacing.edgeEdge\":20,\"spacing.edgeEdgeBetweenLayers\":15,\"elk.hierarchyHandling\":\"INCLUDE_CHILDREN\",\"elk.layered.spacing.edgeNodeBetweenLayers\":40,\"elk.layered.nodePlacement.bk.fixedAlignment\":\"BALANCED\",\"layering.layerConstraint\":\"FIRST\"},\"elkjs_layered_downwards\":{\"algorithm\":\"org.eclipse.elk.layered\",\"elk.direction\":\"DOWN\",\"cycleBreaking.strategy\":\"INTERACTIVE\",\"layering.strategy\":\"INTERACTIVE\",\"crossingMinimization.semiInteractive\":true,\"separateConnectedComponents\":true,\"nodePlacement.strategy\":\"NETWORK_SIMPLEX\",\"spacing.nodeNode\":70,\"spacing.nodeNodeBetweenLayers\":25,\"spacing.edgeNode\":25,\"spacing.edgeNodeBetweenLayers\":20,\"spacing.edgeEdge\":20,\"spacing.edgeEdgeBetweenLayers\":15},\"elkjs_box\":{\"algorithm\":\"org.eclipse.elk.box\",\"childAreaHeight\":3000,\"childAreaWidth\":3000},\"pull_request_2267\":{}}"
+    },
+    {
+        "id": "29a22cea1b552286",
+        "type": "FlowCompareCfg",
+        "name": "FlowCompare",
+        "data": "some default value"
     },
     {
         "id": "0709dd2faa36c481",
