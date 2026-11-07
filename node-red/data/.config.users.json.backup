@@ -4,8 +4,8 @@
             "view": {
                 "view-store-zoom": false,
                 "view-store-position": false,
-                "view-show-grid": true,
-                "view-snap-grid": true,
+                "view-show-grid": false,
+                "view-snap-grid": false,
                 "view-grid-size": "20",
                 "view-node-status": true,
                 "view-node-show-label": true,
@@ -44,6 +44,10 @@
                 "core:show-export-dialog": {
                     "scope": "red-ui-workspace",
                     "key": "ctrl-e"
+                },
+                "flowhub:flowhub-push-current-flow": {
+                    "scope": "red-ui-workspace",
+                    "key": "ctrl-d"
                 }
             },
             "dialog": {
@@ -74,7 +78,8 @@
                                 "ScratchPad",
                                 "FlowCompare",
                                 "erlconfig",
-                                "sidebar-auto-layout"
+                                "sidebar-auto-layout",
+                                "FlowCompare"
                             ],
                             "height": 955,
                             "hidden": false,

@@ -16,6 +16,38 @@
         "env": []
     },
     {
+        "id": "a28df3c664be5d89",
+        "type": "tab",
+        "label": "[ERed] Retrieve all Package flow Examples",
+        "disabled": false,
+        "info": "Use this to create a directory containing a static copy of all flow examples installed by the various node packages.\n\nThis can then be copied over to the erlang red installation for use in Erlang-Red.",
+        "env": []
+    },
+    {
+        "id": "70abaab65ca712d1",
+        "type": "junction",
+        "z": "a28df3c664be5d89",
+        "x": 816.8162797689438,
+        "y": 1068.3877024650574,
+        "wires": [
+            [
+                "3b1db0d78fb347ed"
+            ]
+        ]
+    },
+    {
+        "id": "efee5eec9061d2d5",
+        "type": "junction",
+        "z": "a28df3c664be5d89",
+        "x": 1855.3876880407333,
+        "y": 1065.1019859313965,
+        "wires": [
+            [
+                "70abaab65ca712d1"
+            ]
+        ]
+    },
+    {
         "id": "1ea36d1331c5ae18",
         "type": "FlowHubCfg",
         "apiTokenType": "cred",
@@ -30,7 +62,8 @@
         "flowrevisions": {
             "d5b52b27a613e8c0": "32dfdc471c9ba522a56ebf1911b625344f9bfd3a",
             "d0506e991d512ace": "dd0f32d63c096781eb523a379eeaa8225ffe8412",
-            "4ffc58e357efa2a0": "d5c5a3cf67697e229a9c29f08e5e0499875f2f3a"
+            "4ffc58e357efa2a0": "d5c5a3cf67697e229a9c29f08e5e0499875f2f3a",
+            "a28df3c664be5d89": "d99c55b3a8ff64c11871d1b71b39260fb2b5fd43"
         }
     },
     {
@@ -382,5 +415,359 @@
         "x": 1807,
         "y": 162,
         "wires": []
+    },
+    {
+        "id": "66a26e2c18b020c0",
+        "type": "inject",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "props": [
+            {
+                "p": "path",
+                "v": "examples/flows",
+                "vt": "str"
+            },
+            {
+                "p": "url",
+                "v": "\"http://localhost:1880/cfg/library/\" & $$.path & \"/\"",
+                "vt": "jsonata"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 188,
+        "y": 769,
+        "wires": [
+            [
+                "ecf07eb20157e397"
+            ]
+        ]
+    },
+    {
+        "id": "ecf07eb20157e397",
+        "type": "http request",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 644,
+        "y": 764,
+        "wires": [
+            [
+                "081cd831b7c60e67",
+                "be6b72aa686ac3fa"
+            ]
+        ]
+    },
+    {
+        "id": "081cd831b7c60e67",
+        "type": "split",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 762,
+        "y": 874,
+        "wires": [
+            [
+                "3b1db0d78fb347ed"
+            ]
+        ]
+    },
+    {
+        "id": "2cd7513bd34c156e",
+        "type": "change",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "msg.path & \"/\" & msg.payload",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "\"http://localhost:1880/cfg/library/\" & msg.path",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1269,
+        "y": 944,
+        "wires": [
+            [
+                "20bd4cc3c44d03ce"
+            ]
+        ]
+    },
+    {
+        "id": "20bd4cc3c44d03ce",
+        "type": "http request",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1513,
+        "y": 812.25,
+        "wires": [
+            [
+                "4b8cd78138fdb755",
+                "88acebabb2c37e76"
+            ]
+        ]
+    },
+    {
+        "id": "3b1db0d78fb347ed",
+        "type": "switch",
+        "z": "a28df3c664be5d89",
+        "name": "type of payload?",
+        "property": "$type(payload)",
+        "propertyType": "jsonata",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "object",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "string",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 948,
+        "y": 946,
+        "wires": [
+            [
+                "d14ac59ce475de20"
+            ],
+            [
+                "2cd7513bd34c156e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4b8cd78138fdb755",
+        "type": "split",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 1737,
+        "y": 917,
+        "wires": [
+            [
+                "efee5eec9061d2d5"
+            ]
+        ]
+    },
+    {
+        "id": "d14ac59ce475de20",
+        "type": "change",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "msg.path & \"/\" & msg.payload.fn",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "\"http://localhost:1880/cfg/library/\" & msg.path",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1542,
+        "y": 691.5,
+        "wires": [
+            [
+                "b69eea245586fa61"
+            ]
+        ]
+    },
+    {
+        "id": "b69eea245586fa61",
+        "type": "http request",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1827,
+        "y": 691.5,
+        "wires": [
+            [
+                "8f8b21886df5d9bc"
+            ]
+        ]
+    },
+    {
+        "id": "8f8b21886df5d9bc",
+        "type": "file",
+        "z": "a28df3c664be5d89",
+        "name": "write flow data",
+        "filename": "\"/data/\" & $$.path",
+        "filenameType": "jsonata",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1845,
+        "y": 736.5,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be6b72aa686ac3fa",
+        "type": "change",
+        "z": "a28df3c664be5d89",
+        "name": "create toplevel index.json",
+        "rules": [
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "msg.path & \"/index.json\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1630,
+        "y": 584,
+        "wires": [
+            [
+                "315f475fa10ec9d8"
+            ]
+        ]
+    },
+    {
+        "id": "315f475fa10ec9d8",
+        "type": "file",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "filename": "\"/data/\" & $$.path",
+        "filenameType": "jsonata",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1633,
+        "y": 542,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88acebabb2c37e76",
+        "type": "change",
+        "z": "a28df3c664be5d89",
+        "name": "create index.json",
+        "rules": [
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "msg.path & \"/index.json\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1916,
+        "y": 812.25,
+        "wires": [
+            [
+                "1947f414c50afdeb"
+            ]
+        ]
+    },
+    {
+        "id": "1947f414c50afdeb",
+        "type": "file",
+        "z": "a28df3c664be5d89",
+        "name": "",
+        "filename": "\"/data/\" & $$.path",
+        "filenameType": "jsonata",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1974,
+        "y": 863.25,
+        "wires": [
+            []
+        ]
     }
 ]

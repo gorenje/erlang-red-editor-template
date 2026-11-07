@@ -1,8 +1,8 @@
 ---
-version: '2.2'
-
 networks:
   nrer:
+  mnmn:
+    external: true
 
 services:
   erlangred-nodered-template:
@@ -14,5 +14,6 @@ services:
       - "0.0.0.0:1890:1880"
     networks:
       - nrer
+      - mnmn
     volumes:
       - ./node-red/data:/data

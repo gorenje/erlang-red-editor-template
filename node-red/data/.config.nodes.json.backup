@@ -737,7 +737,8 @@
                 "module": "@gregoriusrippenstein/node-red-contrib-flowhub",
                 "file": "/data/node_modules/@gregoriusrippenstein/node-red-contrib-flowhub/nodes/flowhubcfg.js"
             }
-        }
+        },
+        "pending_version": "1.2.2"
     },
     "@gregoriusrippenstein/node-red-contrib-introspection": {
         "name": "@gregoriusrippenstein/node-red-contrib-introspection",
@@ -959,6 +960,25 @@
                 "user": false,
                 "module": "@gorenje/node-red-contrib-binary",
                 "file": "/data/node_modules/@gorenje/node-red-contrib-binary/binary.js"
+            }
+        }
+    },
+    "@gregoriusrippenstein/node-red-contrib-flowcompare": {
+        "name": "@gregoriusrippenstein/node-red-contrib-flowcompare",
+        "version": "1.0.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "flowcompare": {
+                "name": "flowcompare",
+                "types": [
+                    "FlowCompareCfg"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@gregoriusrippenstein/node-red-contrib-flowcompare",
+                "file": "/data/node_modules/@gregoriusrippenstein/node-red-contrib-flowcompare/nodes/flowcompare.js"
             }
         }
     }
