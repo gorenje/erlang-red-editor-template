@@ -80,9 +80,9 @@
                                 "erlconfig",
                                 "sidebar-auto-layout"
                             ],
-                            "height": 957,
+                            "height": 959,
                             "hidden": false,
-                            "active": "FlowHubDiff"
+                            "active": "config"
                         },
                         "bottom": {
                             "tabs": [
@@ -98,7 +98,7 @@
                             "tabs": [
                                 "explorer"
                             ],
-                            "height": 741,
+                            "height": 743,
                             "hidden": false,
                             "active": "explorer"
                         },

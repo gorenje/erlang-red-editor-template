@@ -711,7 +711,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flowhub": {
         "name": "@gregoriusrippenstein/node-red-contrib-flowhub",
-        "version": "1.1.4",
+        "version": "1.2.2",
         "local": true,
         "user": true,
         "nodes": {
@@ -737,8 +737,7 @@
                 "module": "@gregoriusrippenstein/node-red-contrib-flowhub",
                 "file": "/data/node_modules/@gregoriusrippenstein/node-red-contrib-flowhub/nodes/flowhubcfg.js"
             }
-        },
-        "pending_version": "1.2.2"
+        }
     },
     "@gregoriusrippenstein/node-red-contrib-introspection": {
         "name": "@gregoriusrippenstein/node-red-contrib-introspection",
@@ -922,25 +921,6 @@
                 "user": false,
                 "module": "node-red-node-markdown",
                 "file": "/data/node_modules/node-red-node-markdown/70-markdown.js"
-            }
-        }
-    },
-    "@bartbutenaers/node-red-autolayout-sidebar": {
-        "name": "@bartbutenaers/node-red-autolayout-sidebar",
-        "version": "0.4.1",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "auto_layout_config": {
-                "name": "auto_layout_config",
-                "types": [
-                    "auto_layout_config"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "@bartbutenaers/node-red-autolayout-sidebar",
-                "file": "/data/node_modules/@bartbutenaers/node-red-autolayout-sidebar/auto_layout_config.js"
             }
         }
     },

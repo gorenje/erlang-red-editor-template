@@ -78,12 +78,11 @@
                                 "ScratchPad",
                                 "FlowCompare",
                                 "erlconfig",
-                                "sidebar-auto-layout",
-                                "FlowCompare"
+                                "sidebar-auto-layout"
                             ],
-                            "height": 955,
+                            "height": 957,
                             "hidden": false,
-                            "active": "config"
+                            "active": "FlowHubDiff"
                         },
                         "bottom": {
                             "tabs": [
@@ -99,7 +98,7 @@
                             "tabs": [
                                 "explorer"
                             ],
-                            "height": 739,
+                            "height": 741,
                             "hidden": false,
                             "active": "explorer"
                         },
