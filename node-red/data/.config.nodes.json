@@ -585,7 +585,7 @@
     },
     "@gregoriusrippenstein/erlang-red-unittest": {
         "name": "@gregoriusrippenstein/erlang-red-unittest",
-        "version": "0.20.2",
+        "version": "0.21.9",
         "local": true,
         "user": true,
         "nodes": {
@@ -643,6 +643,17 @@
                 "user": false,
                 "module": "@gregoriusrippenstein/erlang-red-unittest",
                 "file": "/data/node_modules/@gregoriusrippenstein/erlang-red-unittest/nodes/ut-assert-debug.js"
+            },
+            "ut-config": {
+                "name": "ut-config",
+                "types": [
+                    "ut-config"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@gregoriusrippenstein/erlang-red-unittest",
+                "file": "/data/node_modules/@gregoriusrippenstein/erlang-red-unittest/nodes/ut-config.js"
             }
         }
     },
@@ -711,7 +722,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flowhub": {
         "name": "@gregoriusrippenstein/node-red-contrib-flowhub",
-        "version": "1.2.2",
+        "version": "1.2.3",
         "local": true,
         "user": true,
         "nodes": {
@@ -815,7 +826,7 @@
     },
     "@gregoriusrippenstein/node-red-scratchpad": {
         "name": "@gregoriusrippenstein/node-red-scratchpad",
-        "version": "0.2.1",
+        "version": "0.2.2",
         "local": true,
         "user": true,
         "nodes": {

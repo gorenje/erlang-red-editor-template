@@ -46,8 +46,16 @@
                     "key": "ctrl-e"
                 },
                 "flowhub:flowhub-push-current-flow": {
-                    "scope": "red-ui-workspace",
+                    "scope": "*",
                     "key": "ctrl-d"
+                },
+                "presenter-mode:delete-current-workspace": {
+                    "scope": "*",
+                    "key": "alt-w"
+                },
+                "core:hide-flow": {
+                    "scope": "red-ui-workspace",
+                    "key": "alt-l"
                 }
             },
             "dialog": {
@@ -61,28 +69,26 @@
                     "v": 4,
                     "tabs": [],
                     "primary": {
-                        "width": 750,
+                        "width": 432,
                         "top": {
                             "tabs": [
                                 "info",
                                 "help",
                                 "config",
                                 "context",
-                                "UnitTestingErlangRed",
                                 "Flow2Mermaid",
-                                "FlowHubDiff",
                                 "IntrospectionMsgTrace",
                                 "IntrospectionObfuscation",
                                 "IntrospectionLint",
                                 "IntrospectionCapture",
                                 "ScratchPad",
                                 "FlowCompare",
-                                "erlconfig",
-                                "sidebar-auto-layout"
+                                "sidebar-auto-layout",
+                                "erlconfig"
                             ],
-                            "height": 959,
+                            "height": 967,
                             "hidden": false,
-                            "active": "config"
+                            "active": "info"
                         },
                         "bottom": {
                             "tabs": [
@@ -93,21 +99,23 @@
                         }
                     },
                     "secondary": {
-                        "width": 613,
+                        "width": 600,
                         "top": {
                             "tabs": [
-                                "explorer"
+                                "explorer",
+                                "FlowHubDiff"
                             ],
-                            "height": 743,
+                            "height": 1028,
                             "hidden": false,
-                            "active": "explorer"
+                            "active": "FlowHubDiff"
                         },
                         "bottom": {
                             "tabs": [
-                                "palette"
+                                "palette",
+                                "UnitTestingErlangRed"
                             ],
                             "hidden": false,
-                            "active": "palette"
+                            "active": "UnitTestingErlangRed"
                         }
                     }
                 }
