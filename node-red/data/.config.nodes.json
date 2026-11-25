@@ -722,7 +722,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flowhub": {
         "name": "@gregoriusrippenstein/node-red-contrib-flowhub",
-        "version": "1.2.5",
+        "version": "1.2.6",
         "local": true,
         "user": true,
         "nodes": {

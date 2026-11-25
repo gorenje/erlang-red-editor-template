@@ -13,7 +13,7 @@
         "@gregoriusrippenstein/node-red-alias-nodes": "file:nodes/gregoriusrippenstein-node-red-alias-nodes-0.0.1.tgz",
         "@gregoriusrippenstein/node-red-contrib-flow2uml": "~0.5.1",
         "@gregoriusrippenstein/node-red-contrib-flowcompare": "~1.0.1",
-        "@gregoriusrippenstein/node-red-contrib-flowhub": "file:nodes/gregoriusrippenstein-node-red-contrib-flowhub-1.2.5.tgz",
+        "@gregoriusrippenstein/node-red-contrib-flowhub": "file:nodes/gregoriusrippenstein-node-red-contrib-flowhub-1.2.6.tgz",
         "@gregoriusrippenstein/node-red-contrib-flowhub-server": "~1.4.0",
         "@gregoriusrippenstein/node-red-contrib-introspection": "~0.16.1",
         "@gregoriusrippenstein/node-red-presenter-mode": "file:nodes/gregoriusrippenstein-node-red-presenter-mode-0.1.5.tgz",

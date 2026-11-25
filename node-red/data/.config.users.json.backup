@@ -76,6 +76,10 @@
                 "presenter-mode:presenter-mode-previous": {
                     "scope": "*",
                     "key": "alt-p p"
+                },
+                "presenter-mode:presenter-mode-next": {
+                    "scope": "*",
+                    "key": "alt-p n"
                 }
             },
             "dialog": {
