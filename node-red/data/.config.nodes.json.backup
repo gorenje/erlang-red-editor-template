@@ -585,7 +585,7 @@
     },
     "@gregoriusrippenstein/erlang-red-unittest": {
         "name": "@gregoriusrippenstein/erlang-red-unittest",
-        "version": "0.21.8",
+        "version": "3.8.805",
         "local": true,
         "user": true,
         "nodes": {
@@ -656,7 +656,7 @@
                 "file": "/data/node_modules/@gregoriusrippenstein/erlang-red-unittest/nodes/ut-config.js"
             }
         },
-        "pending_version": "0.21.9"
+        "pending_version": "0.21.10"
     },
     "@gregoriusrippenstein/node-red-contrib-flow2uml": {
         "name": "@gregoriusrippenstein/node-red-contrib-flow2uml",
@@ -723,7 +723,7 @@
     },
     "@gregoriusrippenstein/node-red-contrib-flowhub": {
         "name": "@gregoriusrippenstein/node-red-contrib-flowhub",
-        "version": "1.2.3",
+        "version": "1.2.5",
         "local": true,
         "user": true,
         "nodes": {

@@ -56,6 +56,26 @@
                 "core:hide-flow": {
                     "scope": "red-ui-workspace",
                     "key": "alt-l"
+                },
+                "presenter-mode:align-link-to-source": {
+                    "scope": "red-ui-workspace",
+                    "key": "alt-a s"
+                },
+                "presenter-mode:align-link-to-destination": {
+                    "scope": "red-ui-workspace",
+                    "key": "alt-a d"
+                },
+                "presenter-mode:presenter-mode-toggle": {
+                    "scope": "*",
+                    "key": "ctrl-p"
+                },
+                "presenter-mode:presenter-mode-reset": {
+                    "scope": "*",
+                    "key": "alt-p r"
+                },
+                "presenter-mode:presenter-mode-previous": {
+                    "scope": "*",
+                    "key": "alt-p p"
                 }
             },
             "dialog": {
@@ -69,7 +89,7 @@
                     "v": 4,
                     "tabs": [],
                     "primary": {
-                        "width": 432,
+                        "width": 300,
                         "top": {
                             "tabs": [
                                 "info",
@@ -86,9 +106,9 @@
                                 "sidebar-auto-layout",
                                 "erlconfig"
                             ],
-                            "height": 967,
+                            "height": 1164,
                             "hidden": false,
-                            "active": "info"
+                            "active": "config"
                         },
                         "bottom": {
                             "tabs": [
@@ -99,13 +119,13 @@
                         }
                     },
                     "secondary": {
-                        "width": 600,
+                        "width": 0,
                         "top": {
                             "tabs": [
                                 "explorer",
                                 "FlowHubDiff"
                             ],
-                            "height": 839,
+                            "height": 568,
                             "hidden": false,
                             "active": "FlowHubDiff"
                         },
@@ -125,6 +145,8 @@
             "filter": "filterAll",
             "filteredNodes": []
         },
-        "menu-menu-item-sidebar": true
+        "menu-menu-item-sidebar": true,
+        "menu-menu-item-left-sidebar": true,
+        "menu-menu-item-right-sidebar": true
     }
 }
