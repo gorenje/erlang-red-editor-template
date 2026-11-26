@@ -110,7 +110,7 @@
                                 "sidebar-auto-layout",
                                 "erlconfig"
                             ],
-                            "height": 1150,
+                            "height": 1152,
                             "hidden": false,
                             "active": "config"
                         },
@@ -129,7 +129,7 @@
                                 "explorer",
                                 "FlowHubDiff"
                             ],
-                            "height": 570,
+                            "height": 1183,
                             "hidden": false,
                             "active": "FlowHubDiff"
                         },

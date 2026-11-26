@@ -24,22 +24,6 @@
         "env": []
     },
     {
-        "id": "92f3847c08fadfeb",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "28b4d9ab545de76c",
-        "type": "tab",
-        "label": "Flow 3",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "70abaab65ca712d1",
         "type": "junction",
         "z": "a28df3c664be5d89",
@@ -69,7 +53,7 @@
         "apiTokenType": "cred",
         "fullname": "",
         "email": "",
-        "flowid": "4230cfd4c21318a5",
+        "flowid": "4a831589774ecb04",
         "flowrevision": "",
         "notab": false,
         "pushcomment": "",
@@ -83,7 +67,8 @@
             "baf9b878754d019f": "b0c9090c08687a51665a370dddf6df7ce6ce6452",
             "bfced61e72c69715": "865827a59d2f783ee564612a1a3d86e58c76ed1b",
             "4230cfd4c21318a5": "bab4a11b122456b3c28e3b6c1f26964d34b51753",
-            "61142eb3e4e54eab": "09798a934c7a81915ac29c6bef4e4525b582b86c"
+            "61142eb3e4e54eab": "09798a934c7a81915ac29c6bef4e4525b582b86c",
+            "4a831589774ecb04": "5e35d2896dc6ad4ca7ded3c03cc7fd5895f25d5a"
         }
     },
     {
@@ -20293,60 +20278,5 @@
                 "ecf07eb20157e397"
             ]
         ]
-    },
-    {
-        "id": "6132d229a3028c67",
-        "type": "inject",
-        "z": "92f3847c08fadfeb",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 651,
-        "y": 603,
-        "wires": [
-            [
-                "d37776b806e45017",
-                "199e9f255fd085f9"
-            ]
-        ]
-    },
-    {
-        "id": "d37776b806e45017",
-        "type": "ut-assert-failure",
-        "z": "92f3847c08fadfeb",
-        "name": "",
-        "x": 1008,
-        "y": 935,
-        "wires": []
-    },
-    {
-        "id": "199e9f255fd085f9",
-        "type": "debug",
-        "z": "92f3847c08fadfeb",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1619,
-        "y": 563,
-        "wires": []
     }
 ]
